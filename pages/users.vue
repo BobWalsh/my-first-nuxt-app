@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import Header from "~/components/Header.vue";
 export default {
   data() {
     return {
@@ -18,6 +19,9 @@ export default {
       this.$router.push("/users/" + this.userId);
     }
   },
-  layout: "users"
+  layout: "users",
+  components: {
+    Header
+  }
 };
 </script>
